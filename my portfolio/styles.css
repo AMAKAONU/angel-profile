@@ -3,26 +3,47 @@ body{
     padding: 0;
     font-family: sans-serif;
 }
+
+.wrapper{
+    background-color: rgb(241, 224, 71);
+    height: 100vh;
+}
 .container{
-    max-width: 100%;
+    max-width: 85%;
     margin: 0 auto;
     position: relative;
-    background-color: rgb(241, 224, 71);
+   
    
 }
 .navbar{
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
+    align-items: flex-start;
 }
 .nav{
     display: flex;
     justify-content: space-between;
     width: 50%;
-    padding-top: 40px;
+    padding-top: 58px;
+    padding-bottom: 0;
 }
-.nav:hover{
-    color: #8b80bb;
-    transition: .4s;
+.navlist{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding-bottom: 5px;
+    transition: 0.5s ease-out;
+    
+    
+    
+}
+.navlist:hover{
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid rgb(51, 51, 141);
+    
 }
 .logo{
     width: 25%;
@@ -31,32 +52,42 @@ body{
 }
 .contactnav{
     width: 25%;
-    display: block;
-    margin: 0 auto;
-    padding-left: 94px;
+    display: flex;
+   justify-content: center;
+    
 }
 .btn{
-    border: 2px solid grey;
-    color: black ;
-    background: rgb(91, 196, 223);
-    padding: 10px 20px;
-    margin-left: 64px;
+    /* border: 2px solid grey; */
+    border: 0;
+    color: rgb(255, 255, 255) ;
+    background:#050505;
+    padding: 15px 35px;
     margin-top: 40px;
-    border-radius: 35px;
+    font-weight: 600;
+    border-radius: 8px;
     font-size: 16px;
     font-family: Arial;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 .btn:hover{
-    background:#8b80bb;
+    background: rgb(51, 51, 141);
     text-decoration: none;
 }
 .Pj{
     color: rgb(51, 51, 141);
-    letter-spacing: 1px;
+    /* letter-spacing: 0.02px; */
+    text-transform: uppercase;
     margin-left: 20px;
+    font-weight: 800;
+}
+.j{
+    position: relative;
+    left: -15px;
 }
 .span{
+    position: relative;
+    left: -15px;
+    text-transform: capitalize;
     color: black;
 }
 .span1{
